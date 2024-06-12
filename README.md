@@ -3,6 +3,17 @@ This is a network for driver steering intention detection.
 The data that support the ﬁndings of this study are openly available in Brain4Cars repository at https://www.brain4cars.com.
 The data that support the ﬁndings of this study are openly available in Zenodo with the following DOI: http://dx.doi.org/10.5281/zenodo.1009540.
 
+Data processing:
+1. Video converted to frames: extract_images.py
+2. Generate csv file: n_fold_Brain4cars.py
+Meaning of each folder under the datasets folder: annotation (joint in- and out-of-vehicle experiments), face_annotation (in-vehicle experiments), out_annotation (out-of-vehicle experiments).
+
+Code to run:
+1. main.py (joint in- and out-of-vehicle experiments)
+2. With regard to in-vehicle and out-of-vehicle experiments, two approaches are provided.
+(1) main_inside.py (in-car experiment) and main_outside.py (out-of-car experiment), for which json files already exist.
+(2) run-in-car.sh (in-car experiment) and run-out-car.sh (out-of-car experiment), for which no json file exists.
+
 The following methods are compared with our proposed approach:
 1. Car that knows before you do: Anticipating maneuvers via learning temporal driving models.
    They propose an autoregressive Input-Output HMM to model the contextual information and operations using in-car and out-of-car recorded videos.
