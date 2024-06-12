@@ -13,6 +13,7 @@ Code to run:
 2. With regard to in-vehicle and out-of-vehicle experiments, two approaches are provided.
 (1) main_inside.py (in-car experiment) and main_outside.py (out-of-car experiment), for which json files already exist.
 (2) run-in-car.sh (in-car experiment) and run-out-car.sh (out-of-car experiment), for which no json file exists.
+Note: The test folder is an improvement process for the main series of functions. It does not run in practice.
 
 The following methods are compared with our proposed approach:
 1. Car that knows before you do: Anticipating maneuvers via learning temporal driving models.
